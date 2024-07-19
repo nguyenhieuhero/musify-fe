@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ResizableDiv from './ResizableDiv';
 import Player from './Player';
 import SideBar from './SideBar';
+import TopBar from './TopBar';
 
 const StyledAppLayout = styled.div`
   display: flex;
@@ -12,11 +13,10 @@ const StyledAppLayout = styled.div`
   background-color: var(--color-grey-100);
 `;
 const Container = styled.div`
-  margin: 0 auto;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap: 3.2rem;
   background-color: blue;
 `;
 
@@ -24,7 +24,7 @@ const RowLayout = styled.div`
   display: flex;
   flex-direction: row;
   background-color: gray;
-  height: 92vh;
+  height: 91vh;
   width: 100vw;
 `;
 
@@ -34,6 +34,7 @@ function AppLayout() {
       <RowLayout>
         <SideBar />
         <Container>
+          <TopBar />
           <Outlet />
         </Container>
         <ResizableDiv />
