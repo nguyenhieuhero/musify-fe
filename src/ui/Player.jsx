@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-
+import { useSelector } from 'react-redux';
 const StyledPlayer = styled.div`
+  position: relative;
   display: flex;
   height: 9vh;
   width: 100vw;
@@ -11,27 +12,22 @@ const StyledPlayer = styled.div`
 `;
 
 const StyledSpotifyPlayerContainer = styled.div`
-  height: 8vh;
+  position: absolute;
+  height: 100%;
   width: 61vw;
 `;
 
 function Player() {
-  // var iFrameEl = document.getElementById('my-iframe');
-  // var backgroundColor = iFrameEl.contentWindow.getComputedStyle(
-  //   iFrameEl.contentWindow.document.body
-  // ).backgroundColor;
-  // console.log(backgroundColor);
-
+  const { currentTrack } = useSelector((state) => state.player);
   return (
     <StyledPlayer>
       <StyledSpotifyPlayerContainer>
         <iframe
           id="my-iframe"
-          src="https://open.spotify.com/embed/track/0T4AitQuq8IJhWBWuZwkFA?utm_source=generator&theme=0"
+          src={`https://open.spotify.com/embed/track/${currentTrack}?utm_source=generator&theme=0`}
           width="100%"
           height="100%"
-          frameborder="0"
-          allowtransparency="true"
+          frameBorder="0"
           allow="encrypted-media"
           scrolling="no"
         ></iframe>

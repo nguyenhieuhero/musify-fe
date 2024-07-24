@@ -1,26 +1,32 @@
 export const single_track = {
-  _id: 24,
-  has_features: true,
-  track_href: 'https://api.spotify.com/v1/tracks/6uvT4Di9ZRBw5cbexZJDts',
-  loudness: -13.175,
-  liveness: 0.126,
-  tempo: 101.344,
-  valence: 0.441,
-  instrumentalness: 0.0135,
-  type: 'audio_features',
-  danceability: 0.675,
-  uri: 'spotify:track:6uvT4Di9ZRBw5cbexZJDts',
-  speechiness: 0.0389,
-  mode: 0,
-  duration_ms: 182973,
-  popularity: 51,
-  acousticness: 0.541,
-  id: '6uvT4Di9ZRBw5cbexZJDts',
-  analysis_url:
-    'https://api.spotify.com/v1/audio-analysis/6uvT4Di9ZRBw5cbexZJDts',
-  track_uri: 'spotify:track:6uvT4Di9ZRBw5cbexZJDts',
-  key: 11,
-  track_name: 'Highwayman',
-  energy: 0.448,
-  time_signature: 4,
+  artists: [
+    {
+      artist_uri: 'spotify:artist:2xaAOVImG2O6lURwqperlD',
+      artist_name: 'Catfish and the Bottlemen',
+    },
+  ],
+  albums: [
+    {
+      album_images: [
+        {
+          height: 640,
+          width: 640,
+          url: 'https://i.scdn.co/image/ab67616d0000b27374558885d860bb58d78d1de8',
+        },
+        {
+          height: 300,
+          width: 300,
+          url: 'https://i.scdn.co/image/ab67616d00001e0274558885d860bb58d78d1de8',
+        },
+        {
+          height: 64,
+          width: 64,
+          url: 'https://i.scdn.co/image/ab67616d0000485174558885d860bb58d78d1de8',
+        },
+      ],
+      album_name: 'The Ride',
+    },
+  ],
+  track_uri: 'spotify:track:2sewj0rFvlr3aEM3bGy12n',
+  track_name: 'Twice',
 };

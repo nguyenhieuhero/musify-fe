@@ -5,8 +5,8 @@ import PageNotFound from './pages/PageNotFound';
 import Playlist from './pages/Playlist';
 import GlobalStyles from './styles/GlobalStyles';
 import AppLayout from './ui/AppLayout';
-// eslint-disable-next-line no-unused-vars
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import { Toaster } from 'react-hot-toast';
 function App() {
   return (

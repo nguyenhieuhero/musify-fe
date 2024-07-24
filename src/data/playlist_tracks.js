@@ -1,2284 +1,1573 @@
-export const tracks = [
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        image:
-          'https://mosaic.scdn.co/300/ab67616d00001e020d0621554b1c6c9dbf3556beab67616d00001e022e8ed79e177ff6011076f5f0ab67616d00001e02dd0a40eecd4b13e4c59988daab67616d00001e02ff8d8c5662a96d41433e9ee1',
-        identity: {
-          low: 23,
-          high: 0,
+export const tracks = {
+  playlist_tracks: [
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:2xaAOVImG2O6lURwqperlD',
+          artist_name: 'Catfish and the Bottlemen',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/2HHtWyy5CgaQbC7XSoOb0e',
-          loudness: -14.522,
-          liveness: 0.0787,
-          tempo: 108.965,
-          valence: 0.552,
-          instrumentalness: 0.000466,
-          type: 'audio_features',
-          danceability: 0.815,
-          uri: 'spotify:track:2HHtWyy5CgaQbC7XSoOb0e',
-          speechiness: 0.0346,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 243773,
-            high: 0,
-          },
-          popularity: {
-            low: 77,
-            high: 0,
-          },
-          acousticness: 0.216,
-          id: '2HHtWyy5CgaQbC7XSoOb0e',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/2HHtWyy5CgaQbC7XSoOb0e',
-          track_uri: 'spotify:track:2HHtWyy5CgaQbC7XSoOb0e',
-          key: {
-            low: 0,
-            high: 0,
-          },
-          track_name: 'Eye of the Tiger',
-          energy: 0.438,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27374558885d860bb58d78d1de8',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0274558885d860bb58d78d1de8',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485174558885d860bb58d78d1de8',
+            },
+          ],
+          album_name: 'The Ride',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:23',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:2sewj0rFvlr3aEM3bGy12n',
+      track_name: 'Twice',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 25,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:2xaAOVImG2O6lURwqperlD',
+          artist_name: 'Catfish and the Bottlemen',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/3lVjaZwr5ZuaHSKKMLlUI0',
-          loudness: -2.502,
-          liveness: 0.0515,
-          tempo: 120.018,
-          valence: 0.138,
-          instrumentalness: 0.993,
-          type: 'audio_features',
-          danceability: 0.4,
-          uri: 'spotify:track:3lVjaZwr5ZuaHSKKMLlUI0',
-          speechiness: 0.118,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 70294,
-            high: 0,
-          },
-          popularity: {
-            low: 20,
-            high: 0,
-          },
-          acousticness: 0.0000323,
-          id: '3lVjaZwr5ZuaHSKKMLlUI0',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/3lVjaZwr5ZuaHSKKMLlUI0',
-          track_uri: 'spotify:track:3lVjaZwr5ZuaHSKKMLlUI0',
-          key: {
-            low: 9,
-            high: 0,
-          },
-          track_name: 'Libera Me From Hell (Tengen Toppa Gurren Lagann)',
-          energy: 0.975,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27374558885d860bb58d78d1de8',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0274558885d860bb58d78d1de8',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485174558885d860bb58d78d1de8',
+            },
+          ],
+          album_name: 'The Ride',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:25',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:5ykbOijJEfRhuo2Td1m0Qd',
+      track_name: '7',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 28,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:26T3LtbuGT1Fu9m0eRq5X3',
+          artist_name: 'Cage The Elephant',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/6PUCFOeCxn03VmpsIViLRR',
-          loudness: -4.299,
-          liveness: 0.368,
-          tempo: 145.911,
-          valence: 0.589,
-          instrumentalness: 0.933,
-          type: 'audio_features',
-          danceability: 0.414,
-          uri: 'spotify:track:6PUCFOeCxn03VmpsIViLRR',
-          speechiness: 0.0378,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 65306,
-            high: 0,
-          },
-          popularity: {
-            low: 10,
-            high: 0,
-          },
-          acousticness: 0.0000231,
-          id: '6PUCFOeCxn03VmpsIViLRR',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/6PUCFOeCxn03VmpsIViLRR',
-          track_uri: 'spotify:track:6PUCFOeCxn03VmpsIViLRR',
-          key: {
-            low: 7,
-            high: 0,
-          },
-          track_name: 'Pokémon Theme',
-          energy: 0.959,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27372b478dedd009d6b8d6e7971',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0272b478dedd009d6b8d6e7971',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485172b478dedd009d6b8d6e7971',
+            },
+          ],
+          album_name: 'Unpeeled',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:28',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:5atlAt28h9xM5wxPspr5MU',
+      track_name: 'Whole Wide World - Unpeeled',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 35,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:0L8ExT028jH3ddEcZwqJJ5',
+          artist_name: 'Red Hot Chili Peppers',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/7xBYiBEaxRgXS7CTusWDkI',
-          loudness: -7.986,
-          liveness: 0.0985,
-          tempo: 103.868,
-          valence: 0.353,
-          instrumentalness: 0.235,
-          type: 'audio_features',
-          danceability: 0.522,
-          uri: 'spotify:track:7xBYiBEaxRgXS7CTusWDkI',
-          speechiness: 0.0376,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 108532,
-            high: 0,
-          },
-          popularity: {
-            low: 7,
-            high: 0,
-          },
-          acousticness: 0.0534,
-          id: '7xBYiBEaxRgXS7CTusWDkI',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/7xBYiBEaxRgXS7CTusWDkI',
-          track_uri: 'spotify:track:7xBYiBEaxRgXS7CTusWDkI',
-          key: {
-            low: 2,
-            high: 0,
-          },
-          track_name: 'Concerning Hobbits (The Lord of the Rings)',
-          energy: 0.205,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27358406b3f1ac3ceaff7a64fef',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0258406b3f1ac3ceaff7a64fef',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485158406b3f1ac3ceaff7a64fef',
+            },
+          ],
+          album_name: 'The Getaway',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:35',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:2XTkpF9T2PKvcLgamGJGx1',
+      track_name: 'Goodbye Angels',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 39,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:41Q0HrwWBtuUkJc7C1Rp6K',
+          artist_name: '311',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/7qduTebMtWuoDRq29oMSTK',
-          loudness: -4.206,
-          liveness: 0.397,
-          tempo: 181.65,
-          valence: 0.31,
-          instrumentalness: 0.953,
-          type: 'audio_features',
-          danceability: 0.0873,
-          uri: 'spotify:track:7qduTebMtWuoDRq29oMSTK',
-          speechiness: 0.0821,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 214269,
-            high: 0,
-          },
-          popularity: {
-            low: 16,
-            high: 0,
-          },
-          acousticness: 0.000052,
-          id: '7qduTebMtWuoDRq29oMSTK',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/7qduTebMtWuoDRq29oMSTK',
-          track_uri: 'spotify:track:7qduTebMtWuoDRq29oMSTK',
-          key: {
-            low: 2,
-            high: 0,
-          },
-          track_name: 'The Blood of Cuchulainn (The Boondock Saints)',
-          energy: 0.956,
-          time_signature: {
-            low: 3,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273a6c59919331a92f96c4a7444',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02a6c59919331a92f96c4a7444',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851a6c59919331a92f96c4a7444',
+            },
+          ],
+          album_name: 'MOSAIC',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:39',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:2PGaYCles9SXXCjYOcjyfk',
+      track_name: 'Too Much To Think',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 44,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:1GLtl8uqKmnyCWxHmw9tL4',
+          artist_name: 'The Kooks',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/3G9WLNhO0CgWVGvIZBbzyv',
-          loudness: -4.7,
-          liveness: 0.166,
-          tempo: 99.444,
-          valence: 0.367,
-          instrumentalness: 0.933,
-          type: 'audio_features',
-          danceability: 0.282,
-          uri: 'spotify:track:3G9WLNhO0CgWVGvIZBbzyv',
-          speechiness: 0.111,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 110219,
-            high: 0,
-          },
-          popularity: {
-            low: 13,
-            high: 0,
-          },
-          acousticness: 0.000749,
-          id: '3G9WLNhO0CgWVGvIZBbzyv',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/3G9WLNhO0CgWVGvIZBbzyv',
-          track_uri: 'spotify:track:3G9WLNhO0CgWVGvIZBbzyv',
-          key: {
-            low: 3,
-            high: 0,
-          },
-          track_name: "He's a Pirate (Pirates of the Caribbean)",
-          energy: 0.925,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27363a28c5ecb7b13e9b329fe47',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0263a28c5ecb7b13e9b329fe47',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485163a28c5ecb7b13e9b329fe47',
+            },
+          ],
+          album_name: 'Inside In / Inside Out',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:44',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:5xoUgPXbMNUmoHU0Enwtwq',
+      track_name: 'She Moves In Her Own Way',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 50,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:0yb46jwm7gqbZXVXZQ8Z1e',
+          artist_name: 'Bishop Briggs',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/0e9hR1vTrzlUvFH5PgA9rY',
-          loudness: -5.677,
-          liveness: 0.162,
-          tempo: 120.005,
-          valence: 0.556,
-          instrumentalness: 0.891,
-          type: 'audio_features',
-          danceability: 0.492,
-          uri: 'spotify:track:0e9hR1vTrzlUvFH5PgA9rY',
-          speechiness: 0.0554,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 207520,
-            high: 0,
-          },
-          popularity: {
-            low: 28,
-            high: 0,
-          },
-          acousticness: 0.00000965,
-          id: '0e9hR1vTrzlUvFH5PgA9rY',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/0e9hR1vTrzlUvFH5PgA9rY',
-          track_uri: 'spotify:track:0e9hR1vTrzlUvFH5PgA9rY',
-          key: {
-            low: 4,
-            high: 0,
-          },
-          track_name: "Very Bloody Tears (Castlevania II: Simon's Quest)",
-          energy: 0.97,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+        {
+          artist_uri: 'spotify:artist:6VDdCwrBM4qQaGxoAyxyJC',
+          artist_name: 'Cold War Kids',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:50',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b2732f42aa8284d5a0d4957ab20e',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e022f42aa8284d5a0d4957ab20e',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d000048512f42aa8284d5a0d4957ab20e',
+            },
+          ],
+          album_name: 'LA DIVINE',
+        },
+      ],
+      track_uri: 'spotify:track:12pdXFcruNcPUbZypKUDgz',
+      track_name: 'Love Is Mystical',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 53,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:6VDdCwrBM4qQaGxoAyxyJC',
+          artist_name: 'Cold War Kids',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/7dkbEHIMLoeuG4zXGmzhEH',
-          loudness: -3.282,
-          liveness: 0.247,
-          tempo: 170.581,
-          valence: 0.34,
-          instrumentalness: 0.655,
-          type: 'audio_features',
-          danceability: 0.493,
-          uri: 'spotify:track:7dkbEHIMLoeuG4zXGmzhEH',
-          speechiness: 0.0463,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 226000,
-            high: 0,
-          },
-          popularity: {
-            low: 25,
-            high: 0,
-          },
-          acousticness: 0.201,
-          id: '7dkbEHIMLoeuG4zXGmzhEH',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/7dkbEHIMLoeuG4zXGmzhEH',
-          track_uri: 'spotify:track:7dkbEHIMLoeuG4zXGmzhEH',
-          key: {
-            low: 2,
-            high: 0,
-          },
-          track_name: 'U.N. Owen Was Her? (Remix)',
-          energy: 0.969,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273b1c18903012347d9991613da',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02b1c18903012347d9991613da',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851b1c18903012347d9991613da',
+            },
+          ],
+          album_name: 'Hold My Home',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:53',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:3omXshBamrREltcf24gYDC',
+      track_name: 'First',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 57,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:2qk9voo8llSGYcZ6xrBzKx',
+          artist_name: 'Kings of Leon',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/7LAgdpiwZikbmR3Yfwu0Rf',
-          loudness: -9.808,
-          liveness: 0.109,
-          tempo: 169.767,
-          valence: 0.308,
-          instrumentalness: 0.726,
-          type: 'audio_features',
-          danceability: 0.546,
-          uri: 'spotify:track:7LAgdpiwZikbmR3Yfwu0Rf',
-          speechiness: 0.0377,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 104600,
-            high: 0,
-          },
-          popularity: {
-            low: 33,
-            high: 0,
-          },
-          acousticness: 0.906,
-          id: '7LAgdpiwZikbmR3Yfwu0Rf',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/7LAgdpiwZikbmR3Yfwu0Rf',
-          track_uri: 'spotify:track:7LAgdpiwZikbmR3Yfwu0Rf',
-          key: {
-            low: 2,
-            high: 0,
-          },
-          track_name: 'I Am The Doctor In Utah',
-          energy: 0.47,
-          time_signature: {
-            low: 1,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27353aad61053bd83196f4559fc',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0253aad61053bd83196f4559fc',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485153aad61053bd83196f4559fc',
+            },
+          ],
+          album_name: 'WALLS',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:57',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:5LlsD7LdSMkGV4Iu0a2Zq0',
+      track_name: 'Waste A Moment',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 60,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:1moxjboGR7GNWYIMWsRjgG',
+          artist_name: 'Florence + The Machine',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/2TK2KSrzXD6W01qjXVjNGh',
-          loudness: -9.382,
-          liveness: 0.664,
-          tempo: 173.552,
-          valence: 0.511,
-          instrumentalness: {
-            low: 0,
-            high: 0,
-          },
-          type: 'audio_features',
-          danceability: 0.638,
-          uri: 'spotify:track:2TK2KSrzXD6W01qjXVjNGh',
-          speechiness: 0.426,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 318215,
-            high: 0,
-          },
-          popularity: {
-            low: 67,
-            high: 0,
-          },
-          acousticness: 0.271,
-          id: '2TK2KSrzXD6W01qjXVjNGh',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/2TK2KSrzXD6W01qjXVjNGh',
-          track_uri: 'spotify:track:2TK2KSrzXD6W01qjXVjNGh',
-          key: {
-            low: 4,
-            high: 0,
-          },
-          track_name: 'The Room Where It Happens',
-          energy: 0.49,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b2737f89eb18e64f268561d81c42',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e027f89eb18e64f268561d81c42',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d000048517f89eb18e64f268561d81c42',
+            },
+          ],
+          album_name: 'How Big, How Blue, How Beautiful (Deluxe)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:60',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:2kP1ujXHn0mNqFbiT3zob8',
+      track_name: 'What Kind Of Man',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 64,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:1moxjboGR7GNWYIMWsRjgG',
+          artist_name: 'Florence + The Machine',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/3nJYcY9yvKP8Oi2Ml8brXt',
-          loudness: -9.41,
-          liveness: 0.205,
-          tempo: 158.576,
-          valence: 0.383,
-          instrumentalness: {
-            low: 0,
-            high: 0,
-          },
-          type: 'audio_features',
-          danceability: 0.68,
-          uri: 'spotify:track:3nJYcY9yvKP8Oi2Ml8brXt',
-          speechiness: 0.492,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 321697,
-            high: 0,
-          },
-          popularity: {
-            low: 66,
-            high: 0,
-          },
-          acousticness: 0.177,
-          id: '3nJYcY9yvKP8Oi2Ml8brXt',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/3nJYcY9yvKP8Oi2Ml8brXt',
-          track_uri: 'spotify:track:3nJYcY9yvKP8Oi2Ml8brXt',
-          key: {
-            low: 8,
-            high: 0,
-          },
-          track_name: 'Right Hand Man',
-          energy: 0.413,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b2737f89eb18e64f268561d81c42',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e027f89eb18e64f268561d81c42',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d000048517f89eb18e64f268561d81c42',
+            },
+          ],
+          album_name: 'How Big, How Blue, How Beautiful (Deluxe)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:64',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:3dEFa9KjOLEZl980ctEEv1',
+      track_name: 'Ship To Wreck',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 70,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3WrFJ7ztbogyGnTHbHJFl2',
+          artist_name: 'The Beatles',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/4TTV7EcfroSLWzXRY6gLv6',
-          loudness: -7.861,
-          liveness: 0.118,
-          tempo: 131.995,
-          valence: 0.552,
-          instrumentalness: {
-            low: 0,
-            high: 0,
-          },
-          type: 'audio_features',
-          danceability: 0.609,
-          uri: 'spotify:track:4TTV7EcfroSLWzXRY6gLv6',
-          speechiness: 0.285,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 236738,
-            high: 0,
-          },
-          popularity: {
-            low: 71,
-            high: 0,
-          },
-          acousticness: 0.522,
-          id: '4TTV7EcfroSLWzXRY6gLv6',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/4TTV7EcfroSLWzXRY6gLv6',
-          track_uri: 'spotify:track:4TTV7EcfroSLWzXRY6gLv6',
-          key: {
-            low: 11,
-            high: 0,
-          },
-          track_name: 'Alexander Hamilton',
-          energy: 0.435,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273f7c34e39bb746d7f41bc5519',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02f7c34e39bb746d7f41bc5519',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851f7c34e39bb746d7f41bc5519',
+            },
+          ],
+          album_name: 'Abbey Road (Remastered)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:70',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:2EqlS6tkEnglzr7tkKAAYD',
+      track_name: 'Come Together - Remastered 2009',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 74,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:2qk9voo8llSGYcZ6xrBzKx',
+          artist_name: 'Kings of Leon',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/4cxvludVmQxryrnx1m9FqL',
-          loudness: -6.764,
-          liveness: 0.0903,
-          tempo: 180.466,
-          valence: 0.568,
-          instrumentalness: {
-            low: 0,
-            high: 0,
-          },
-          type: 'audio_features',
-          danceability: 0.698,
-          uri: 'spotify:track:4cxvludVmQxryrnx1m9FqL',
-          speechiness: 0.415,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 333154,
-            high: 0,
-          },
-          popularity: {
-            low: 69,
-            high: 0,
-          },
-          acousticness: 0.15,
-          id: '4cxvludVmQxryrnx1m9FqL',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/4cxvludVmQxryrnx1m9FqL',
-          track_uri: 'spotify:track:4cxvludVmQxryrnx1m9FqL',
-          key: {
-            low: 8,
-            high: 0,
-          },
-          track_name: 'My Shot',
-          energy: 0.649,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27353aad61053bd83196f4559fc',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0253aad61053bd83196f4559fc',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485153aad61053bd83196f4559fc',
+            },
+          ],
+          album_name: 'WALLS',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:74',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:5cm47Nc1MWBVIkRFaXxvHY',
+      track_name: 'Reverend',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 80,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:0L8ExT028jH3ddEcZwqJJ5',
+          artist_name: 'Red Hot Chili Peppers',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/5CQ30WqJwcep0pYcV4AMNc',
-          loudness: -12.049,
-          liveness: 0.116,
-          tempo: 82.433,
-          valence: 0.197,
-          instrumentalness: 0.0032,
-          type: 'audio_features',
-          danceability: 0.338,
-          uri: 'spotify:track:5CQ30WqJwcep0pYcV4AMNc',
-          speechiness: 0.0339,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 482830,
-            high: 0,
-          },
-          popularity: {
-            low: 78,
-            high: 0,
-          },
-          acousticness: 0.58,
-          id: '5CQ30WqJwcep0pYcV4AMNc',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/5CQ30WqJwcep0pYcV4AMNc',
-          track_uri: 'spotify:track:5CQ30WqJwcep0pYcV4AMNc',
-          key: {
-            low: 9,
-            high: 0,
-          },
-          track_name: 'Stairway to Heaven - Remaster',
-          energy: 0.34,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273de1af2785a83cc660155a0c4',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02de1af2785a83cc660155a0c4',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851de1af2785a83cc660155a0c4',
+            },
+          ],
+          album_name: 'By the Way (Deluxe Edition)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:80',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:5TGYo4MrNKqIvJqgx134py',
+      track_name: 'Cabron',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 85,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:0L8ExT028jH3ddEcZwqJJ5',
+          artist_name: 'Red Hot Chili Peppers',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/77YKoNCjP5hWqiXMRG2839',
-          loudness: -8.797,
-          liveness: 0.152,
-          tempo: 150.132,
-          valence: 0.355,
-          instrumentalness: 0.0862,
-          type: 'audio_features',
-          danceability: 0.543,
-          uri: 'spotify:track:77YKoNCjP5hWqiXMRG2839',
-          speechiness: 0.0282,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 306040,
-            high: 0,
-          },
-          popularity: {
-            low: 69,
-            high: 0,
-          },
-          acousticness: 0.295,
-          id: '77YKoNCjP5hWqiXMRG2839',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/77YKoNCjP5hWqiXMRG2839',
-          track_uri: 'spotify:track:77YKoNCjP5hWqiXMRG2839',
-          key: {
-            low: 6,
-            high: 0,
-          },
-          track_name: 'Shine',
-          energy: 0.423,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273de1af2785a83cc660155a0c4',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02de1af2785a83cc660155a0c4',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851de1af2785a83cc660155a0c4',
+            },
+          ],
+          album_name: 'By the Way (Deluxe Edition)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:85',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:7IWu3uIUIYIeafzwv582Ho',
+      track_name: 'Minor Thing',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 89,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:7oPftvlwr6VrsViSDV7fJY',
+          artist_name: 'Green Day',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/5dyQ8spGuggi5RBqhkUToy',
-          loudness: -5.392,
-          liveness: 0.113,
-          tempo: 100.969,
-          valence: 0.203,
-          instrumentalness: 0.000539,
-          type: 'audio_features',
-          danceability: 0.442,
-          uri: 'spotify:track:5dyQ8spGuggi5RBqhkUToy',
-          speechiness: 0.0394,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 602080,
-            high: 0,
-          },
-          popularity: {
-            low: 51,
-            high: 0,
-          },
-          acousticness: 0.00969,
-          id: '5dyQ8spGuggi5RBqhkUToy',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/5dyQ8spGuggi5RBqhkUToy',
-          track_uri: 'spotify:track:5dyQ8spGuggi5RBqhkUToy',
-          key: {
-            low: 5,
-            high: 0,
-          },
-          track_name: 'Ghost Love Score',
-          energy: 0.779,
-          time_signature: {
-            low: 3,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273af71e889d130283bcd08b8a7',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02af71e889d130283bcd08b8a7',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851af71e889d130283bcd08b8a7',
+            },
+          ],
+          album_name: 'Revolution Radio',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:89',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:0PAlrNkCRRHv7hShF5s7Rr',
+      track_name: 'Outlaws',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 94,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:7oPftvlwr6VrsViSDV7fJY',
+          artist_name: 'Green Day',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/6Vz7vzOpCwKeSQlfViibuY',
-          loudness: -7.42,
-          liveness: 0.0655,
-          tempo: 102.561,
-          valence: 0.724,
-          instrumentalness: 0.0112,
-          type: 'audio_features',
-          danceability: 0.633,
-          uri: 'spotify:track:6Vz7vzOpCwKeSQlfViibuY',
-          speechiness: 0.0473,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 356520,
-            high: 0,
-          },
-          popularity: {
-            low: 61,
-            high: 0,
-          },
-          acousticness: 0.208,
-          id: '6Vz7vzOpCwKeSQlfViibuY',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/6Vz7vzOpCwKeSQlfViibuY',
-          track_uri: 'spotify:track:6Vz7vzOpCwKeSQlfViibuY',
-          key: {
-            low: 11,
-            high: 0,
-          },
-          track_name: 'Crazy',
-          energy: 0.858,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273af71e889d130283bcd08b8a7',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02af71e889d130283bcd08b8a7',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851af71e889d130283bcd08b8a7',
+            },
+          ],
+          album_name: 'Revolution Radio',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:94',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:35weSxL477aChs1wx7oZS5',
+      track_name: 'Ordinary World',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 98,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:6ltzsmQQbmdoHHbLZ4ZN25',
+          artist_name: 'Lord Huron',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/1Ud6moTC0KyXMq1Oxfien0',
-          loudness: -9.237,
-          liveness: 0.0588,
-          tempo: 116.039,
-          valence: 0.561,
-          instrumentalness: {
-            low: 0,
-            high: 0,
-          },
-          type: 'audio_features',
-          danceability: 0.703,
-          uri: 'spotify:track:1Ud6moTC0KyXMq1Oxfien0',
-          speechiness: 0.22,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 378147,
-            high: 0,
-          },
-          popularity: {
-            low: 73,
-            high: 0,
-          },
-          acousticness: 0.516,
-          id: '1Ud6moTC0KyXMq1Oxfien0',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/1Ud6moTC0KyXMq1Oxfien0',
-          track_uri: 'spotify:track:1Ud6moTC0KyXMq1Oxfien0',
-          key: {
-            low: 9,
-            high: 0,
-          },
-          track_name: 'Sympathy For The Devil - 50th Anniversary Edition',
-          energy: 0.668,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273ee6611c95f868e465c98a0b2',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02ee6611c95f868e465c98a0b2',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851ee6611c95f868e465c98a0b2',
+            },
+          ],
+          album_name: 'Strange Trails',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:98',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:3hRV0jL3vUpRrcy398teAU',
+      track_name: 'The Night We Met',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 105,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3WrFJ7ztbogyGnTHbHJFl2',
+          artist_name: 'The Beatles',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/6H3kDe7CGoWYBabAeVWGiD',
-          loudness: -8.277,
-          liveness: 0.17,
-          tempo: 118.628,
-          valence: 0.489,
-          instrumentalness: 0.039,
-          type: 'audio_features',
-          danceability: 0.634,
-          uri: 'spotify:track:6H3kDe7CGoWYBabAeVWGiD',
-          speechiness: 0.031,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 270773,
-            high: 0,
-          },
-          popularity: {
-            low: 77,
-            high: 0,
-          },
-          acousticness: 0.447,
-          id: '6H3kDe7CGoWYBabAeVWGiD',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/6H3kDe7CGoWYBabAeVWGiD',
-          track_uri: 'spotify:track:6H3kDe7CGoWYBabAeVWGiD',
-          key: {
-            low: 1,
-            high: 0,
-          },
-          track_name: 'Gimme Shelter',
-          energy: 0.63,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273a9bfc3a64366fa2ad89467a3',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02a9bfc3a64366fa2ad89467a3',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851a9bfc3a64366fa2ad89467a3',
+            },
+          ],
+          album_name: 'Let It Be (Remastered)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:105',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:7iN1s7xHE4ifF5povM6A48',
+      track_name: 'Let It Be - Remastered 2009',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 111,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:4kI8Ie27vjvonwaB2ePh8T',
+          artist_name: 'Portugal. The Man',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/5EWPGh7jbTNO2wakv8LjUI',
-          loudness: -8.21,
-          liveness: 0.0924,
-          tempo: 118.222,
-          valence: 0.337,
-          instrumentalness: 0.0000969,
-          type: 'audio_features',
-          danceability: 0.249,
-          uri: 'spotify:track:5EWPGh7jbTNO2wakv8LjUI',
-          speechiness: 0.0574,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 547107,
-            high: 0,
-          },
-          popularity: {
-            low: 78,
-            high: 0,
-          },
-          acousticness: 0.0742,
-          id: '5EWPGh7jbTNO2wakv8LjUI',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/5EWPGh7jbTNO2wakv8LjUI',
-          track_uri: 'spotify:track:5EWPGh7jbTNO2wakv8LjUI',
-          key: {
-            low: 0,
-            high: 0,
-          },
-          track_name: 'Free Bird',
-          energy: 0.834,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+        {
+          artist_uri: 'spotify:artist:4Qk0lWGeXydDvfrDufDQ9p',
+          artist_name: 'Richie Havens',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:111',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+        {
+          artist_uri: 'spotify:artist:4lujUKeO6nQAJXpq37Epn7',
+          artist_name: 'Son Little',
+        },
+        {
+          artist_uri: 'spotify:artist:4LJyNrhA76ZDxM5YnLHEse',
+          artist_name: 'Mary Elizabeth Winstead',
+        },
+        {
+          artist_uri: 'spotify:artist:3cirKgD46SUAENxkH571sd',
+          artist_name: 'Zoe Manville',
+        },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273af52c228c9619ff6298b08cd',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02af52c228c9619ff6298b08cd',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851af52c228c9619ff6298b08cd',
+            },
+          ],
+          album_name: 'Woodstock',
+        },
+      ],
+      track_uri: 'spotify:track:6QgjcU0zLnzq5OrUoSZ3OK',
+      track_name: 'Feel It Still',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 117,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3XHO7cRUPCLOr6jwp8vsx5',
+          artist_name: 'alt-J',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/1GqlvSEtMx5xbGptxOTTyk',
-          loudness: -6.183,
-          liveness: 0.211,
-          tempo: 127.678,
-          valence: 0.684,
-          instrumentalness: 0.0000999,
-          type: 'audio_features',
-          danceability: 0.419,
-          uri: 'spotify:track:1GqlvSEtMx5xbGptxOTTyk',
-          speechiness: 0.0343,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 303587,
-            high: 0,
-          },
-          popularity: {
-            low: 67,
-            high: 0,
-          },
-          acousticness: 0.00101,
-          id: '1GqlvSEtMx5xbGptxOTTyk',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/1GqlvSEtMx5xbGptxOTTyk',
-          track_uri: 'spotify:track:1GqlvSEtMx5xbGptxOTTyk',
-          key: {
-            low: 4,
-            high: 0,
-          },
-          track_name: 'Peace of Mind',
-          energy: 0.677,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273616cd9879264afc938539cf7',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02616cd9879264afc938539cf7',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851616cd9879264afc938539cf7',
+            },
+          ],
+          album_name: 'This Is All Yours',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:117',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:5qJqzpNdEbt92roedFwoDR',
+      track_name: 'Left Hand Free',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 123,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:2xaAOVImG2O6lURwqperlD',
+          artist_name: 'Catfish and the Bottlemen',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/39C5FuZ8C8M0QI8CrMsPkR',
-          loudness: -8.868,
-          liveness: 0.0923,
-          tempo: 118.704,
-          valence: 0.209,
-          instrumentalness: 0.00748,
-          type: 'audio_features',
-          danceability: 0.435,
-          uri: 'spotify:track:39C5FuZ8C8M0QI8CrMsPkR',
-          speechiness: 0.0545,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 467640,
-            high: 0,
-          },
-          popularity: {
-            low: 61,
-            high: 0,
-          },
-          acousticness: 0.00983,
-          id: '39C5FuZ8C8M0QI8CrMsPkR',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/39C5FuZ8C8M0QI8CrMsPkR',
-          track_uri: 'spotify:track:39C5FuZ8C8M0QI8CrMsPkR',
-          key: {
-            low: 5,
-            high: 0,
-          },
-          track_name: 'Foreplay / Long Time',
-          energy: 0.657,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27301dc6f1606274fd91a82e9f5',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0201dc6f1606274fd91a82e9f5',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485101dc6f1606274fd91a82e9f5',
+            },
+          ],
+          album_name: 'The Balcony',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:123',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:1MHYAqWWdDRePmnqORynrq',
+      track_name: 'Kathleen',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 128,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3kVUvbeRdcrqQ3oHk5hPdx',
+          artist_name: 'GROUPLOVE',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/4aVuWgvD0X63hcOCnZtNFA',
-          loudness: -4.797,
-          liveness: 0.173,
-          tempo: 96.556,
-          valence: 0.808,
-          instrumentalness: 0.0618,
-          type: 'audio_features',
-          danceability: 0.473,
-          uri: 'spotify:track:4aVuWgvD0X63hcOCnZtNFA',
-          speechiness: 0.0561,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 235547,
-            high: 0,
-          },
-          popularity: {
-            low: 85,
-            high: 0,
-          },
-          acousticness: 0.00783,
-          id: '4aVuWgvD0X63hcOCnZtNFA',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/4aVuWgvD0X63hcOCnZtNFA',
-          track_uri: 'spotify:track:4aVuWgvD0X63hcOCnZtNFA',
-          key: {
-            low: 6,
-            high: 0,
-          },
-          track_name: 'Hold the Line',
-          energy: 0.898,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273d84a9bbcba91cb6a4a212b1b',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02d84a9bbcba91cb6a4a212b1b',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851d84a9bbcba91cb6a4a212b1b',
+            },
+          ],
+          album_name: 'Never Trust a Happy Song',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:128',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:0GO8y8jQk1PkHzS31d699N',
+      track_name: 'Tongue Tied',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 132,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3WrFJ7ztbogyGnTHbHJFl2',
+          artist_name: 'The Beatles',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/4DMKwE2E2iYDKY01C335Uw',
-          loudness: -5.735,
-          liveness: 0.446,
-          tempo: 126.755,
-          valence: 0.793,
-          instrumentalness: 0.0000888,
-          type: 'audio_features',
-          danceability: 0.482,
-          uri: 'spotify:track:4DMKwE2E2iYDKY01C335Uw',
-          speechiness: 0.032,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 323000,
-            high: 0,
-          },
-          popularity: {
-            low: 76,
-            high: 0,
-          },
-          acousticness: 0.00321,
-          id: '4DMKwE2E2iYDKY01C335Uw',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/4DMKwE2E2iYDKY01C335Uw',
-          track_uri: 'spotify:track:4DMKwE2E2iYDKY01C335Uw',
-          key: {
-            low: 7,
-            high: 0,
-          },
-          track_name: 'Carry on Wayward Son',
-          energy: 0.786,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b2732ad20d4688bdc999413ece39',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e022ad20d4688bdc999413ece39',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d000048512ad20d4688bdc999413ece39',
+            },
+          ],
+          album_name: 'The Beatles 1967 – 1970 (2023 Edition)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:132',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:1RP85mAmvJ8baqjP53kFJu',
+      track_name: 'Hey Jude - 2015 Mix',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 137,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3WrFJ7ztbogyGnTHbHJFl2',
+          artist_name: 'The Beatles',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/4u7EnebtmKWzUH433cf5Qv',
-          loudness: -9.928,
-          liveness: 0.3,
-          tempo: 71.068,
-          valence: 0.226,
-          instrumentalness: {
-            low: 0,
-            high: 0,
-          },
-          type: 'audio_features',
-          danceability: 0.411,
-          uri: 'spotify:track:4u7EnebtmKWzUH433cf5Qv',
-          speechiness: 0.0511,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 354320,
-            high: 0,
-          },
-          popularity: {
-            low: 81,
-            high: 0,
-          },
-          acousticness: 0.271,
-          id: '4u7EnebtmKWzUH433cf5Qv',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/4u7EnebtmKWzUH433cf5Qv',
-          track_uri: 'spotify:track:4u7EnebtmKWzUH433cf5Qv',
-          key: {
-            low: 0,
-            high: 0,
-          },
-          track_name: 'Bohemian Rhapsody - Remastered 2011',
-          energy: 0.404,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b2735ef4660298ae29ee18799fc2',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e025ef4660298ae29ee18799fc2',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d000048515ef4660298ae29ee18799fc2',
+            },
+          ],
+          album_name: 'The Beatles 1962 - 1966 (Remastered)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:137',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:5Qe7NHxeLAn8KoLTNLSdwe',
+      track_name: 'I Want To Hold Your Hand - Remastered 2009',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 142,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:0vqkz1b2qBkoYrGMj2CUWq',
+          artist_name: 'Bobby Womack',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/7e89621JPkKaeDSTQ3avtg',
-          loudness: -12.145,
-          liveness: 0.0863,
-          tempo: 97.785,
-          valence: 0.886,
-          instrumentalness: 0.000327,
-          type: 'audio_features',
-          danceability: 0.596,
-          uri: 'spotify:track:7e89621JPkKaeDSTQ3avtg',
-          speechiness: 0.0255,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 283800,
-            high: 0,
-          },
-          popularity: {
-            low: 81,
-            high: 0,
-          },
-          acousticness: 0.181,
-          id: '7e89621JPkKaeDSTQ3avtg',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/7e89621JPkKaeDSTQ3avtg',
-          track_uri: 'spotify:track:7e89621JPkKaeDSTQ3avtg',
-          key: {
-            low: 7,
-            high: 0,
-          },
-          track_name: 'Sweet Home Alabama',
-          energy: 0.606,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+        {
+          artist_uri: 'spotify:artist:3AA28KZvwAUcZuOKwyblJQ',
+          artist_name: 'Gorillaz',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:142',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+        {
+          artist_uri: 'spotify:artist:0Mz5XE0kb1GBnbLQm2VbcO',
+          artist_name: 'Mos Def',
+        },
+        {
+          artist_uri: 'spotify:artist:6Tyzp9KzpiZ04DABQoedps',
+          artist_name: 'Little Dragon',
+        },
+        {
+          artist_uri: 'spotify:artist:1Z8ODXyhEBi3WynYw0Rya6',
+          artist_name: 'De La Soul',
+        },
+        {
+          artist_uri: 'spotify:artist:7hJcb9fa4alzcOq3EaNPoG',
+          artist_name: 'Snoop Dogg',
+        },
+        {
+          artist_uri: 'spotify:artist:4wvPcMJk7L9Rbw9Qh4kBeH',
+          artist_name: 'Hypnotic Brass Ensemble',
+        },
+        {
+          artist_uri: 'spotify:artist:0dLSQG3IV62UNVhWUe6mx6',
+          artist_name: 'Gruff Rhys',
+        },
+        {
+          artist_uri: 'spotify:artist:7p9cQvuiCC28PPRZwHGDBM',
+          artist_name: 'Dave Jolicoeur',
+        },
+        {
+          artist_uri: 'spotify:artist:0Qpk1IGiZeB6rRhfK4FVDT',
+          artist_name: 'Kelvin Mercer',
+        },
+        {
+          artist_uri: 'spotify:artist:5zn3k8gMt8SFgxpt5k43ct',
+          artist_name: 'Vincent Mason',
+        },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273661d019f34569f79eae9e985',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02661d019f34569f79eae9e985',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851661d019f34569f79eae9e985',
+            },
+          ],
+          album_name: 'Plastic Beach',
+        },
+      ],
+      track_uri: 'spotify:track:0q6LuUqGLUiCPP1cbdwFs3',
+      track_name: 'On Melancholy Hill',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 144,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:5BvJzeQpmsdsFp4HGUYUEx',
+          artist_name: 'Vampire Weekend',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/1QEEqeFIZktqIpPI4jSVSF',
-          loudness: -8.039,
-          liveness: 0.0504,
-          tempo: 108.789,
-          valence: 0.285,
-          instrumentalness: 0.0023,
-          type: 'audio_features',
-          danceability: 0.377,
-          uri: 'spotify:track:1QEEqeFIZktqIpPI4jSVSF',
-          speechiness: 0.0298,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 285133,
-            high: 0,
-          },
-          popularity: {
-            low: 81,
-            high: 0,
-          },
-          acousticness: 0.00088,
-          id: '1QEEqeFIZktqIpPI4jSVSF',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/1QEEqeFIZktqIpPI4jSVSF',
-          track_uri: 'spotify:track:1QEEqeFIZktqIpPI4jSVSF',
-          key: {
-            low: 7,
-            high: 0,
-          },
-          track_name: 'More Than a Feeling',
-          energy: 0.681,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27301e2ebfbf4f8147621c8a866',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0201e2ebfbf4f8147621c8a866',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485101e2ebfbf4f8147621c8a866',
+            },
+          ],
+          album_name: 'Vampire Weekend',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:144',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:2DrGEaqoruCSn0FffWCf5O',
+      track_name: 'A-Punk',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 147,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3WrFJ7ztbogyGnTHbHJFl2',
+          artist_name: 'The Beatles',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/6Vjk8MNXpQpi0F4BefdTyq',
-          loudness: -8.538,
-          liveness: 0.0512,
-          tempo: 80.576,
-          valence: 0.594,
-          instrumentalness: 0.000414,
-          type: 'audio_features',
-          danceability: 0.483,
-          uri: 'spotify:track:6Vjk8MNXpQpi0F4BefdTyq',
-          speechiness: 0.0497,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 517125,
-            high: 0,
-          },
-          popularity: {
-            low: 69,
-            high: 0,
-          },
-          acousticness: 0.452,
-          id: '6Vjk8MNXpQpi0F4BefdTyq',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/6Vjk8MNXpQpi0F4BefdTyq',
-          track_uri: 'spotify:track:6Vjk8MNXpQpi0F4BefdTyq',
-          key: {
-            low: 2,
-            high: 0,
-          },
-          track_name: 'Kashmir - Remaster',
-          energy: 0.615,
-          time_signature: {
-            low: 3,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273608a63ad5b18e99da94a3f73',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02608a63ad5b18e99da94a3f73',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851608a63ad5b18e99da94a3f73',
+            },
+          ],
+          album_name: 'With The Beatles (Remastered)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:147',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:4joiWvli4qJVEW6qZV2i2J',
+      track_name: 'All My Loving - Remastered 2009',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 149,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:7jefIIksOi1EazgRTfW2Pk',
+          artist_name: 'Electric Light Orchestra',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/1nS12P1Ely8F4tzeXPMsYr',
-          loudness: -10.763,
-          liveness: 0.296,
-          tempo: 145.029,
-          valence: 0.346,
-          instrumentalness: 0.974,
-          type: 'audio_features',
-          danceability: 0.476,
-          uri: 'spotify:track:1nS12P1Ely8F4tzeXPMsYr',
-          speechiness: 0.0309,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 241160,
-            high: 0,
-          },
-          popularity: {
-            low: 40,
-            high: 0,
-          },
-          acousticness: 0.093,
-          id: '1nS12P1Ely8F4tzeXPMsYr',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/1nS12P1Ely8F4tzeXPMsYr',
-          track_uri: 'spotify:track:1nS12P1Ely8F4tzeXPMsYr',
-          key: {
-            low: 2,
-            high: 0,
-          },
-          track_name: 'The Majestic Tale (Of A Madman In A Box)',
-          energy: 0.551,
-          time_signature: {
-            low: 1,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b2738c4e95986c803791125e8991',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e028c4e95986c803791125e8991',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d000048518c4e95986c803791125e8991',
+            },
+          ],
+          album_name: 'Out of the Blue',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:149',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:2RlgNHKcydI9sayD2Df2xp',
+      track_name: 'Mr. Blue Sky',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 152,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:6GkJh85o22LfD2vgL9DP6f',
+          artist_name: 'Dirty Heads',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/7snQQk1zcKl8gZ92AnueZW',
-          loudness: -5.321,
-          liveness: 0.112,
-          tempo: 125.304,
-          valence: 0.624,
-          instrumentalness: 0.0843,
-          type: 'audio_features',
-          danceability: 0.445,
-          uri: 'spotify:track:7snQQk1zcKl8gZ92AnueZW',
-          speechiness: 0.0522,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 356067,
-            high: 0,
-          },
-          popularity: {
-            low: 86,
-            high: 0,
-          },
-          acousticness: 0.09,
-          id: '7snQQk1zcKl8gZ92AnueZW',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/7snQQk1zcKl8gZ92AnueZW',
-          track_uri: 'spotify:track:7snQQk1zcKl8gZ92AnueZW',
-          key: {
-            low: 6,
-            high: 0,
-          },
-          track_name: "Sweet Child O' Mine",
-          energy: 0.952,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+        {
+          artist_uri: 'spotify:artist:7hlcwaLWsbcwOkPtdxRoCa',
+          artist_name: 'Rome',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:152',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27364fe6edc06aef2928d1b3a61',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0264fe6edc06aef2928d1b3a61',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485164fe6edc06aef2928d1b3a61',
+            },
+          ],
+          album_name: 'Any Port in a Storm (Special Edition)',
+        },
+      ],
+      track_uri: 'spotify:track:27cyWPYManSTHiwMreSuGB',
+      track_name: 'Lay Me Down (feat. Rome)',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 155,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:1moxjboGR7GNWYIMWsRjgG',
+          artist_name: 'Florence + The Machine',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/4BP3uh0hFLFRb5cjsgLqDh',
-          loudness: -7.516,
-          liveness: 0.152,
-          tempo: 132.77,
-          valence: 0.663,
-          instrumentalness: 0.00806,
-          type: 'audio_features',
-          danceability: 0.64,
-          uri: 'spotify:track:4BP3uh0hFLFRb5cjsgLqDh',
-          speechiness: 0.0374,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 140773,
-            high: 0,
-          },
-          popularity: {
-            low: 86,
-            high: 0,
-          },
-          acousticness: 0.201,
-          id: '4BP3uh0hFLFRb5cjsgLqDh',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/4BP3uh0hFLFRb5cjsgLqDh',
-          track_uri: 'spotify:track:4BP3uh0hFLFRb5cjsgLqDh',
-          key: {
-            low: 0,
-            high: 0,
-          },
-          track_name: 'Fortunate Son',
-          energy: 0.663,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273003f81b1f4246362638e682d',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02003f81b1f4246362638e682d',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851003f81b1f4246362638e682d',
+            },
+          ],
+          album_name: 'Lungs (Deluxe Version)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:155',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b2737f1d6472eac2fc9dc9617db9',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e027f1d6472eac2fc9dc9617db9',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d000048517f1d6472eac2fc9dc9617db9',
+            },
+          ],
+          album_name: 'Between Two Lungs',
+        },
+      ],
+      track_uri: 'spotify:track:456WNXWhDwYOSf5SpTuqxd',
+      track_name: 'Dog Days Are Over',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 160,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:0L8ExT028jH3ddEcZwqJJ5',
+          artist_name: 'Red Hot Chili Peppers',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/58dBJivB6lbAY5irCuAxJX',
-          loudness: -3.209,
-          liveness: 0.157,
-          tempo: 125.443,
-          valence: 0.684,
-          instrumentalness: 0.000073,
-          type: 'audio_features',
-          danceability: 0.402,
-          uri: 'spotify:track:58dBJivB6lbAY5irCuAxJX',
-          speechiness: 0.0586,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 253667,
-            high: 0,
-          },
-          popularity: {
-            low: 66,
-            high: 0,
-          },
-          acousticness: 0.00484,
-          id: '58dBJivB6lbAY5irCuAxJX',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/58dBJivB6lbAY5irCuAxJX',
-          track_uri: 'spotify:track:58dBJivB6lbAY5irCuAxJX',
-          key: {
-            low: 4,
-            high: 0,
-          },
-          track_name: 'Rock You Like a Hurricane (2015 - Remaster)',
-          energy: 0.873,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0209fd83d32aee93dceba78517',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485109fd83d32aee93dceba78517',
+            },
+          ],
+          album_name: 'Stadium Arcadium',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:160',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:37kTASujIfZZ27NV7PfIrf',
+      track_name: 'Hard to Concentrate',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 164,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3kVUvbeRdcrqQ3oHk5hPdx',
+          artist_name: 'GROUPLOVE',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/3QZ7uX97s82HFYSmQUAN1D',
-          loudness: -7.211,
-          liveness: 0.06,
-          tempo: 87.559,
-          valence: 0.666,
-          instrumentalness: 0.0186,
-          type: 'audio_features',
-          danceability: 0.536,
-          uri: 'spotify:track:3QZ7uX97s82HFYSmQUAN1D',
-          speechiness: 0.0374,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 276880,
-            high: 0,
-          },
-          popularity: {
-            low: 71,
-            high: 0,
-          },
-          acousticness: 0.00145,
-          id: '3QZ7uX97s82HFYSmQUAN1D',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/3QZ7uX97s82HFYSmQUAN1D',
-          track_uri: 'spotify:track:3QZ7uX97s82HFYSmQUAN1D',
-          key: {
-            low: 9,
-            high: 0,
-          },
-          track_name: 'Tom Sawyer',
-          energy: 0.901,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273dc0c360005537dd7675a187b',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02dc0c360005537dd7675a187b',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851dc0c360005537dd7675a187b',
+            },
+          ],
+          album_name: 'Big Mess',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:164',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:4hAhyE1iL07EIUJnqw2bsV',
+      track_name: 'Welcome to Your Life',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 168,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:0L8ExT028jH3ddEcZwqJJ5',
+          artist_name: 'Red Hot Chili Peppers',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/6UGHk2cmbDC1oidVjXcCKo',
-          loudness: -7.64,
-          liveness: 0.0472,
-          tempo: 144.368,
-          valence: 0.298,
-          instrumentalness: 0.000186,
-          type: 'audio_features',
-          danceability: 0.528,
-          uri: 'spotify:track:6UGHk2cmbDC1oidVjXcCKo',
-          speechiness: 0.0524,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 370427,
-            high: 0,
-          },
-          popularity: {
-            low: 52,
-            high: 0,
-          },
-          acousticness: 0.0174,
-          id: '6UGHk2cmbDC1oidVjXcCKo',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/6UGHk2cmbDC1oidVjXcCKo',
-          track_uri: 'spotify:track:6UGHk2cmbDC1oidVjXcCKo',
-          key: {
-            low: 2,
-            high: 0,
-          },
-          track_name: 'Red Barchetta',
-          energy: 0.921,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b2735590b4ee88187cb06a5b102d',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e025590b4ee88187cb06a5b102d',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d000048515590b4ee88187cb06a5b102d',
+            },
+          ],
+          album_name: 'Greatest Hits',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:168',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:3arKRnq9OUd7yq6LRwVW8I',
+      track_name: 'Soul to Squeeze',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 172,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:69MEO1AADKg1IZrq2XLzo5',
+          artist_name: 'UB40',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/3lpDrxUkr0tIe1kmJvdK7d',
-          loudness: -8.244,
-          liveness: 0.068,
-          tempo: 141.053,
-          valence: 0.386,
-          instrumentalness: 0.809,
-          type: 'audio_features',
-          danceability: 0.51,
-          uri: 'spotify:track:3lpDrxUkr0tIe1kmJvdK7d',
-          speechiness: 0.0593,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 265840,
-            high: 0,
-          },
-          popularity: {
-            low: 56,
-            high: 0,
-          },
-          acousticness: 0.00205,
-          id: '3lpDrxUkr0tIe1kmJvdK7d',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/3lpDrxUkr0tIe1kmJvdK7d',
-          track_uri: 'spotify:track:3lpDrxUkr0tIe1kmJvdK7d',
-          key: {
-            low: 7,
-            high: 0,
-          },
-          track_name: 'YYZ',
-          energy: 0.919,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273678217496fb787a68f14f8af',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02678217496fb787a68f14f8af',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851678217496fb787a68f14f8af',
+            },
+          ],
+          album_name: 'The Best Of UB40 Volume I',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:172',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:4POgt5ayni68MeLqclubcC',
+      track_name: 'Red Red Wine',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 175,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3WrFJ7ztbogyGnTHbHJFl2',
+          artist_name: 'The Beatles',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/0K6yUnIKNsFtfIpTgGtcHm',
-          loudness: -8.485,
-          liveness: 0.111,
-          tempo: 131.18,
-          valence: 0.788,
-          instrumentalness: 0.0013,
-          type: 'audio_features',
-          danceability: 0.581,
-          uri: 'spotify:track:0K6yUnIKNsFtfIpTgGtcHm',
-          speechiness: 0.0428,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 259840,
-            high: 0,
-          },
-          popularity: {
-            low: 64,
-            high: 0,
-          },
-          acousticness: 0.00197,
-          id: '0K6yUnIKNsFtfIpTgGtcHm',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/0K6yUnIKNsFtfIpTgGtcHm',
-          track_uri: 'spotify:track:0K6yUnIKNsFtfIpTgGtcHm',
-          key: {
-            low: 1,
-            high: 0,
-          },
-          track_name: 'Limelight',
-          energy: 0.854,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273d967cd10468b9cf4e6bdfc7b',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02d967cd10468b9cf4e6bdfc7b',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851d967cd10468b9cf4e6bdfc7b',
+            },
+          ],
+          album_name: 'Help! (Remastered)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:175',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:3BQHpFgAp4l80e1XslIjNI',
+      track_name: 'Yesterday - Remastered 2009',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 180,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:0YrtvWJMgSdVrk3SfNjTbx',
+          artist_name: 'Death Cab for Cutie',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/0hBby0yygBY1u3m6tSpZgC',
-          loudness: -8.841,
-          liveness: 0.392,
-          tempo: 165.307,
-          valence: 0.139,
-          instrumentalness: 0.496,
-          type: 'audio_features',
-          danceability: 0.293,
-          uri: 'spotify:track:0hBby0yygBY1u3m6tSpZgC',
-          speechiness: 0.0438,
-          mode: {
-            low: 1,
-            high: 0,
-          },
-          duration_ms: {
-            low: 658987,
-            high: 0,
-          },
-          popularity: {
-            low: 47,
-            high: 0,
-          },
-          acousticness: 0.00774,
-          id: '0hBby0yygBY1u3m6tSpZgC',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/0hBby0yygBY1u3m6tSpZgC',
-          track_uri: 'spotify:track:0hBby0yygBY1u3m6tSpZgC',
-          key: {
-            low: 5,
-            high: 0,
-          },
-          track_name: 'The Camera Eye',
-          energy: 0.787,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273c985bcc18dd81da80839e5a9',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02c985bcc18dd81da80839e5a9',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851c985bcc18dd81da80839e5a9',
+            },
+          ],
+          album_name: 'Plans',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:180',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:6Wuv7MrhesuDsuGv8vcrOd',
+      track_name: 'Soul Meets Body',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 184,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:0L8ExT028jH3ddEcZwqJJ5',
+          artist_name: 'Red Hot Chili Peppers',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/6cbBAD1AAYVaQR1cx89AZX',
-          loudness: -10.342,
-          liveness: 0.0958,
-          tempo: 121.732,
-          valence: 0.357,
-          instrumentalness: 0.0156,
-          type: 'audio_features',
-          danceability: 0.528,
-          uri: 'spotify:track:6cbBAD1AAYVaQR1cx89AZX',
-          speechiness: 0.0315,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 285533,
-            high: 0,
-          },
-          popularity: {
-            low: 42,
-            high: 0,
-          },
-          acousticness: 0.245,
-          id: '6cbBAD1AAYVaQR1cx89AZX',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/6cbBAD1AAYVaQR1cx89AZX',
-          track_uri: 'spotify:track:6cbBAD1AAYVaQR1cx89AZX',
-          key: {
-            low: 2,
-            high: 0,
-          },
-          track_name: 'Witch Hunt',
-          energy: 0.557,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273de1af2785a83cc660155a0c4',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02de1af2785a83cc660155a0c4',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851de1af2785a83cc660155a0c4',
+            },
+          ],
+          album_name: 'By the Way (Deluxe Edition)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:184',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:3oP2vxUR2bjFCrU9YolGnM',
+      track_name: 'I Could Die for You',
     },
-  },
-  {
-    keys: ['a'],
-    length: 1,
-    _fields: [
-      {
-        identity: {
-          low: 190,
-          high: 0,
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3WrFJ7ztbogyGnTHbHJFl2',
+          artist_name: 'The Beatles',
         },
-        labels: ['TRACK'],
-        properties: {
-          has_features: true,
-          track_href:
-            'https://api.spotify.com/v1/tracks/1k0GxoZYv3Yx5mNeXMOZN2',
-          loudness: -8.574,
-          liveness: 0.318,
-          tempo: 143.218,
-          valence: 0.627,
-          instrumentalness: 0.0000171,
-          type: 'audio_features',
-          danceability: 0.603,
-          uri: 'spotify:track:1k0GxoZYv3Yx5mNeXMOZN2',
-          speechiness: 0.0584,
-          mode: {
-            low: 0,
-            high: 0,
-          },
-          duration_ms: {
-            low: 286227,
-            high: 0,
-          },
-          popularity: {
-            low: 49,
-            high: 0,
-          },
-          acousticness: 0.0251,
-          id: '1k0GxoZYv3Yx5mNeXMOZN2',
-          analysis_url:
-            'https://api.spotify.com/v1/audio-analysis/1k0GxoZYv3Yx5mNeXMOZN2',
-          track_uri: 'spotify:track:1k0GxoZYv3Yx5mNeXMOZN2',
-          key: {
-            low: 0,
-            high: 0,
-          },
-          track_name: 'Vital Signs',
-          energy: 0.851,
-          time_signature: {
-            low: 4,
-            high: 0,
-          },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273d967cd10468b9cf4e6bdfc7b',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02d967cd10468b9cf4e6bdfc7b',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851d967cd10468b9cf4e6bdfc7b',
+            },
+          ],
+          album_name: 'Help! (Remastered)',
         },
-        elementId: '4:2ddb64e2-ab1d-45e2-8691-b841308cd9f6:190',
-      },
-    ],
-    _fieldLookup: {
-      a: 0,
+      ],
+      track_uri: 'spotify:track:7DD7eSuYSC5xk2ArU62esN',
+      track_name: 'Help! - Remastered 2009',
     },
-  },
-];
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:320EPCSEezHt1rtbfwH6Ck',
+          artist_name: 'The Monkees',
+        },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27376448e93fcf0b2298744ba97',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0276448e93fcf0b2298744ba97',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485176448e93fcf0b2298744ba97',
+            },
+          ],
+          album_name: 'The Birds, The Bees, & The Monkees',
+        },
+      ],
+      track_uri: 'spotify:track:7uEcCGtM1FBBGIhPozhJjv',
+      track_name: 'Daydream Believer',
+    },
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:3WrFJ7ztbogyGnTHbHJFl2',
+          artist_name: 'The Beatles',
+        },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273699c3d063dad4e127247ed69',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02699c3d063dad4e127247ed69',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851699c3d063dad4e127247ed69',
+            },
+          ],
+          album_name: 'The Beatles 1967 - 1970 (Remastered)',
+        },
+      ],
+      track_uri: 'spotify:track:3UDmHZcBTQp8Iu8droNtUl',
+      track_name: 'Revolution - Remastered 2009',
+    },
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:6LqNN22kT3074XbTVUrhzX',
+          artist_name: 'Kesha',
+        },
+        {
+          artist_uri: 'spotify:artist:4LFgxG38Y0l4Fo1gdQelay',
+          artist_name: 'The Dap-Kings Horns',
+        },
+        {
+          artist_uri: 'spotify:artist:02uYdhMhCgdB49hZlYRm9o',
+          artist_name: 'Eagles Of Death Metal',
+        },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27355de63b8aaf464fe8146b4f1',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0255de63b8aaf464fe8146b4f1',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485155de63b8aaf464fe8146b4f1',
+            },
+          ],
+          album_name: 'Rainbow',
+        },
+      ],
+      track_uri: 'spotify:track:2Tuc96S4JToUiQSLW3aMec',
+      track_name: 'Rainbow',
+    },
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:2xaAOVImG2O6lURwqperlD',
+          artist_name: 'Catfish and the Bottlemen',
+        },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27374558885d860bb58d78d1de8',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0274558885d860bb58d78d1de8',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485174558885d860bb58d78d1de8',
+            },
+          ],
+          album_name: 'The Ride',
+        },
+      ],
+      track_uri: 'spotify:track:60W7Co2AoP5VVG5Gwu6p5P',
+      track_name: 'Soundcheck',
+    },
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:2RQXRUsr4IW1f3mKyKsy4B',
+          artist_name: 'Noah Kahan',
+        },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273a82b6363eb1895f2e9aae530',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02a82b6363eb1895f2e9aae530',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851a82b6363eb1895f2e9aae530',
+            },
+          ],
+          album_name: 'Busyhead',
+        },
+      ],
+      track_uri: 'spotify:track:5ngcqrs4Xq915GUqNtNNr5',
+      track_name: 'Young Blood',
+    },
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:0L8ExT028jH3ddEcZwqJJ5',
+          artist_name: 'Red Hot Chili Peppers',
+        },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e0209fd83d32aee93dceba78517',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d0000485109fd83d32aee93dceba78517',
+            },
+          ],
+          album_name: 'Stadium Arcadium',
+        },
+      ],
+      track_uri: 'spotify:track:42DSTal38NakfMCu7RuNcv',
+      track_name: 'Make You Feel Better',
+    },
+    {
+      artists: [
+        {
+          artist_uri: 'spotify:artist:26T3LtbuGT1Fu9m0eRq5X3',
+          artist_name: 'Cage The Elephant',
+        },
+        {
+          artist_uri: 'spotify:artist:5rexG906fVLfq8H9m8J9P9',
+          artist_name: 'Alison Mosshart',
+        },
+      ],
+      albums: [
+        {
+          album_images: [
+            {
+              height: 640,
+              width: 640,
+              url: 'https://i.scdn.co/image/ab67616d0000b273fb1cb900d28642e668d77b12',
+            },
+            {
+              height: 300,
+              width: 300,
+              url: 'https://i.scdn.co/image/ab67616d00001e02fb1cb900d28642e668d77b12',
+            },
+            {
+              height: 64,
+              width: 64,
+              url: 'https://i.scdn.co/image/ab67616d00004851fb1cb900d28642e668d77b12',
+            },
+          ],
+          album_name: 'Melophobia',
+        },
+      ],
+      track_uri: 'spotify:track:4cAyxZSDlcVS6CYaeBYrIJ',
+      track_name: 'Take It Or Leave It',
+    },
+  ],
+  playlist_name: 'BOP',
+};

@@ -4,6 +4,9 @@ import ResizableDiv from './ResizableDiv';
 import Player from './Player';
 import SideBar from './SideBar';
 import TopBar from './TopBar';
+import BottomBar from './BottomBar';
+import { Scrollable } from './ScrollBar';
+import { useRef } from 'react';
 
 const StyledAppLayout = styled.div`
   display: flex;
@@ -18,6 +21,7 @@ const Container = styled.div`
   flex-direction: column;
   flex-grow: 1;
   background-color: blue;
+  /* overflow-y: scroll; */
 `;
 
 const RowLayout = styled.div`
@@ -28,14 +32,24 @@ const RowLayout = styled.div`
   width: 100vw;
 `;
 
+const Content = styled(Scrollable)`
+  flex-grow: 1;
+`;
+
 function AppLayout() {
+  const contentRef = useRef(null);
   return (
     <StyledAppLayout>
       <RowLayout>
-        <SideBar />
+        <SideBar>
+          <SideBar.Navigate />
+        </SideBar>
         <Container>
-          <TopBar />
-          <Outlet />
+          <TopBar contentRef={contentRef} />
+          <Content ref={contentRef}>
+            <Outlet />
+            <BottomBar />
+          </Content>
         </Container>
         <ResizableDiv />
       </RowLayout>

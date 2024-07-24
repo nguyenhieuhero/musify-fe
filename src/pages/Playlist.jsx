@@ -1,43 +1,20 @@
 import styled from 'styled-components';
 import TrackCard from '../ui/TrackCard';
-import EditableImage from '../ui/EditableImage';
+import Header from '../ui/Header';
+import { tracks } from '../data/playlist_tracks';
 
 const StyledPlaylist = styled.div`
-  height: 200vh;
   background-color: gray;
-  overflow-y: scroll;
-  padding-top: 70px;
-  /* &::-webkit-scrollbar {
-    display: none;
-  } */
+  padding-top: 100px;
 `;
 
 function Playlist() {
   return (
     <StyledPlaylist>
-      <h1>Playlist</h1>
-      <EditableImage />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
+      <Header title={tracks.playlist_name} />
+      {tracks.playlist_tracks.map((track) => (
+        <TrackCard track={track} key={track.track_uri} />
+      ))}
     </StyledPlaylist>
   );
 }
