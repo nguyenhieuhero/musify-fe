@@ -8,7 +8,7 @@ const StyledDropdown = styled.div`
   display: inline-block;
 `;
 
-const StyledDropdownMenu = styled.div`
+const StyledDropdownPopUp = styled.div`
   display: ${({ $isOpen }) => ($isOpen ? 'block' : 'none')};
   position: absolute;
   top: 100%;
@@ -45,7 +45,7 @@ const Trigger = ({ children }) => {
 
 const Menu = ({ children }) => {
   const { isOpen } = useContext(DropdownContext);
-  return <StyledDropdownMenu $isOpen={isOpen}>{children}</StyledDropdownMenu>;
+  return <StyledDropdownPopUp $isOpen={isOpen}>{children}</StyledDropdownPopUp>;
 };
 
 const Item = ({ children, onClick }) => {

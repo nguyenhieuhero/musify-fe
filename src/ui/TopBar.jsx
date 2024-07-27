@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import useBackForward from '../hooks/useBackForward';
 import Button from './Button';
 import { useCallback, useEffect, useState } from 'react';
-import Dropdown from './DropdownMenu';
+import Dropdown from './DropdownPopUp';
+import Popup from './ModalPopUp';
 
 const StyledTopBar = styled.div`
   position: relative;
@@ -59,6 +60,12 @@ function TopBar({ contentRef }) {
       <Button onClick={goForward} disabled={!canGoForward}>
         Forward
       </Button>
+      <Popup>
+        <Popup.Trigger>
+          <button>gê</button>
+        </Popup.Trigger>
+        <Popup.Content>haskjhdasd</Popup.Content>
+      </Popup>
       <Dropdown>
         <Dropdown.Trigger>
           <button>Open Dropdown</button>

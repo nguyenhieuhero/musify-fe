@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { playTrack } from '../features/Player/PlayerSlice';
+import Dropdown from './DropdownPopUp';
 
 const TrackCardContainer = styled.div`
   display: flex;
@@ -8,9 +9,9 @@ const TrackCardContainer = styled.div`
   background-color: ${({ $isPlaying }) => ($isPlaying ? 'yellow' : 'white')};
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   width: 95%;
   margin: 10px;
+  position: relative;
   &:hover {
     background-color: red;
   }
@@ -68,6 +69,16 @@ const TrackCard = ({ track }) => {
         <ArtistName>{artists[0].artist_name}</ArtistName>
         <AlbumName>{album_name}</AlbumName>
       </TrackInfo>
+      <Dropdown>
+        <Dropdown.Trigger>
+          <button>Options</button>
+        </Dropdown.Trigger>
+        <Dropdown.Menu isOpen={true}>
+          <Dropdown.Item>Option 1</Dropdown.Item>
+          <Dropdown.Item>Option 2</Dropdown.Item>
+          <Dropdown.Item>Option 3</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
     </TrackCardContainer>
   );
 };
