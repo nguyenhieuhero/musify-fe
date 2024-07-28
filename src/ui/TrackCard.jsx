@@ -60,7 +60,7 @@ const TrackCard = ({ track }) => {
 
   return (
     <TrackCardContainer
-      onClick={handleClick}
+      onDoubleClick={handleClick}
       $isPlaying={currentTrack == track_id}
     >
       <AlbumCover src={url} alt={album_name} />

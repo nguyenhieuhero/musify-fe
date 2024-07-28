@@ -1,36 +1,101 @@
 import styled from 'styled-components';
 import { useState, createContext } from 'react';
 import { Link } from 'react-router-dom';
-
-const StyledSideBar = styled.div`
-  height: 91vh;
-  width: 20vw;
-  background-color: black;
-`;
+import { Scrollable } from './ScrollBar';
 
 const SideBarContext = createContext();
 
-function SideBar({ children }) {
-  // const [isExpand, setIsExpand] = useState(true);
+const StyledSideBar = styled(Scrollable)`
+  height: 91vh;
+  width: 20vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+`;
+
+const StyledSection = styled.div`
+  margin-bottom: 20px;
+`;
+
+const StyledItem = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  &:hover {
+    background-color: #333;
+  }
+`;
+
+const StyledTitle = styled.div`
+  font-weight: bold;
+  margin: 20px 0 10px;
+`;
+
+const StyledSubItem = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  &:hover {
+    background-color: #333;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+`;
+
+const SideBar = ({ children }) => {
   const [count, setCount] = useState(0);
   return (
-    <SideBarContext.Provider>
-      <StyledSideBar onClick={() => setCount((count) => count + 1)}>
-        <h1>{count}</h1>
+    <SideBarContext.Provider value={{ count, setCount }}>
+      <StyledSideBar onClick={() => setCount((prev) => prev + 1)}>
         {children}
       </StyledSideBar>
     </SideBarContext.Provider>
   );
-}
+};
 
-function HomeNavigate() {
+const Section = ({ children }) => {
+  return <StyledSection>{children}</StyledSection>;
+};
+
+const Item = ({ icon, to, children }) => {
   return (
-    <ul>
-      <Link to="/playlist">Playlist</Link>
-      <Link to="/">home</Link>
-    </ul>
+    <StyledItem>
+      {icon}
+      <StyledLink to={to}>{children}</StyledLink>
+    </StyledItem>
   );
-}
-SideBar.Navigate = HomeNavigate;
+};
+
+const Title = ({ children }) => {
+  return <StyledTitle>{children}</StyledTitle>;
+};
+
+const SubItem = ({ image, children }) => {
+  return (
+    <StyledSubItem>
+      {image && (
+        <img
+          src={image}
+          alt=""
+          style={{ width: '40px', height: '40px', marginRight: '10px' }}
+        />
+      )}
+      <span>{children}</span>
+    </StyledSubItem>
+  );
+};
+
+SideBar.Section = Section;
+SideBar.Item = Item;
+SideBar.Title = Title;
+SideBar.SubItem = SubItem;
 
 export default SideBar;

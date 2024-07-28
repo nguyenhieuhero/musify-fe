@@ -42,7 +42,44 @@ function AppLayout() {
     <StyledAppLayout>
       <RowLayout>
         <SideBar>
-          <SideBar.Navigate />
+          <SideBar.Section>
+            <SideBar.Item icon={'Home'} to="/">
+              Home
+            </SideBar.Item>
+            <SideBar.Item icon={'Search'} to="/search">
+              Search
+            </SideBar.Item>
+          </SideBar.Section>
+          <SideBar.Section>
+            <SideBar.Item icon={'----------'} to="/playlist">
+              Your Library
+            </SideBar.Item>
+            <SideBar.Title>Playlists</SideBar.Title>
+            <SideBar.SubItem image="https://via.placeholder.com/40">
+              {"When I'm Alone"}
+            </SideBar.SubItem>
+            <SideBar.SubItem image="https://via.placeholder.com/40">
+              Nostalgic
+            </SideBar.SubItem>
+            <SideBar.SubItem image="https://via.placeholder.com/40">
+              Relax
+            </SideBar.SubItem>
+            <SideBar.SubItem image="https://via.placeholder.com/40">
+              Instrumentals
+            </SideBar.SubItem>
+            <SideBar.SubItem image="https://via.placeholder.com/40">
+              Instrumentals
+            </SideBar.SubItem>
+            <SideBar.SubItem image="https://via.placeholder.com/40">
+              Instrumentals
+            </SideBar.SubItem>
+            <SideBar.SubItem image="https://via.placeholder.com/40">
+              Instrumentals
+            </SideBar.SubItem>
+            <SideBar.SubItem image="https://via.placeholder.com/40">
+              Instrumentals
+            </SideBar.SubItem>
+          </SideBar.Section>
         </SideBar>
         <Container>
           <TopBar contentRef={contentRef} />
