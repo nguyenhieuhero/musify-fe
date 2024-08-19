@@ -18,13 +18,20 @@ const StyledSpotifyPlayerContainer = styled.div`
 `;
 
 function Player() {
-  const { currentTrack } = useSelector((state) => state.player);
+  const { trackInfo } = useSelector((state) => state.player);
+  if (!trackInfo) {
+    return (
+      <StyledPlayer>
+        <h2>Pick a song to play!</h2>
+      </StyledPlayer>
+    );
+  }
   return (
     <StyledPlayer>
       <StyledSpotifyPlayerContainer>
         <iframe
           id="my-iframe"
-          src={`https://open.spotify.com/embed/track/${currentTrack}?utm_source=generator&theme=0`}
+          src={`https://open.spotify.com/embed/track/${trackInfo.id}?utm_source=generator&theme=0`}
           width="100%"
           height="100%"
           frameBorder="0"

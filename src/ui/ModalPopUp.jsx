@@ -1,5 +1,7 @@
-import { useState, createContext, useContext } from 'react';
+import { createContext, useContext } from 'react';
 import styled from 'styled-components';
+import Button from './Button';
+import { useAppContext } from '../contexts/AppContext';
 
 const PopupContext = createContext();
 
@@ -13,43 +15,59 @@ const StyledPopupOverlay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000; /* Ensure it covers the entire screen */
 `;
 
 const StyledPopupContent = styled.div`
-  background: white;
+  background: ${({ bgColor }) => bgColor || 'white'};
+  color: ${({ textColor }) => textColor || 'black'}; /* Use textColor prop */
   border-radius: 8px;
   padding: 20px;
   width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Ensure all child elements inherit the text color */
+  & * {
+    color: inherit;
+  }
 `;
 
 const Popup = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isModalOpen, setIsModalOpen } = useAppContext();
 
   return (
-    <PopupContext.Provider value={{ isOpen, setIsOpen }}>
+    <PopupContext.Provider value={{ isModalOpen, setIsModalOpen }}>
       {children}
     </PopupContext.Provider>
   );
 };
 
 const Trigger = ({ children }) => {
-  const { setIsOpen } = useContext(PopupContext);
-  return <div onClick={() => setIsOpen(true)}>{children}</div>;
+  const { setIsModalOpen } = useContext(PopupContext);
+  return <Button onClick={() => setIsModalOpen(true)}>{children}</Button>;
 };
 
-const Content = ({ children }) => {
-  const { isOpen, setIsOpen } = useContext(PopupContext);
+const Content = ({ children, bgColor = '#282828', textColor = '#ffffff' }) => {
+  const { isModalOpen, setIsModalOpen } = useContext(PopupContext);
 
-  if (!isOpen) return null;
+  if (!isModalOpen) return null;
 
   return (
-    <StyledPopupOverlay onClick={() => setIsOpen(false)}>
-      <StyledPopupContent onClick={(e) => e.stopPropagation()}>
+    <StyledPopupOverlay onClick={() => setIsModalOpen(false)}>
+      <StyledPopupContent
+        bgColor={bgColor}
+        textColor={textColor}
+        onClick={(e) => e.stopPropagation()}
+      >
         {children}
       </StyledPopupContent>
     </StyledPopupOverlay>
   );
+};
+
+const CloseButton = ({ children }) => {
+  const { setIsModalOpen } = useContext(PopupContext);
+  return <Button onClick={() => setIsModalOpen(false)}>{children}</Button>;
 };
 
 const Header = ({ children }) => <div>{children}</div>;
@@ -61,5 +79,6 @@ Popup.Content = Content;
 Popup.Header = Header;
 Popup.Body = Body;
 Popup.Footer = Footer;
+Popup.CloseButton = CloseButton;
 
 export default Popup;

@@ -1,28 +1,28 @@
 import styled from 'styled-components';
+
 export const Scrollable = styled.div`
   overflow-y: auto;
-  /* Custom scroll bar styles */
+  /* Custom scrollbar styles */
   &::-webkit-scrollbar {
-    z-index: 100000;
-    width: 12px;
+    width: 12px; /* Adjust width of the scrollbar */
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 3px;
-    border: 3px solid #f5f5f5; /* Adjusts the padding around the thumb */
+    background-color: #888; /* Default color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+    border: 3px solid #f5f5f5; /* Padding around the scrollbar thumb */
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+    background-color: #555; /* Color of the scrollbar thumb on hover */
   }
 
   &::-webkit-scrollbar-track {
-    background-color: #f5f5f5;
-    /* border-radius: 10px; */
+    background-color: #f5f5f5; /* Background color of the scrollbar track */
+    border-radius: 6px; /* Rounded corners for the scrollbar track */
   }
 
   &::-webkit-scrollbar-corner {
-    background-color: transparent; /* For the bottom-right corner where both scrollbars meet */
+    background-color: transparent; /* Bottom-right corner where both scrollbars meet */
   }
 `;

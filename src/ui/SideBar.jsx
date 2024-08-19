@@ -1,18 +1,16 @@
 import styled from 'styled-components';
-import { useState, createContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Scrollable } from './ScrollBar';
 
-const SideBarContext = createContext();
-
 const StyledSideBar = styled(Scrollable)`
-  height: 91vh;
-  width: 20vw;
-  background-color: black;
-  color: white;
+  height: 100vh;
+  width: 20vw; /* Adjust width for better layout */
+  background-color: #000;
+  color: #fff;
   display: flex;
   flex-direction: column;
   padding: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3); /* Add shadow for separation */
 `;
 
 const StyledSection = styled.div`
@@ -22,52 +20,55 @@ const StyledSection = styled.div`
 const StyledItem = styled.div`
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
   cursor: pointer;
+  background-color: ${({ $isActive }) => ($isActive ? '#333' : 'transparent')};
   &:hover {
     background-color: #333;
   }
+  transition: background-color 0.2s;
 `;
 
 const StyledTitle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: bold;
-  margin: 20px 0 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
 `;
 
 const StyledSubItem = styled.div`
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
   cursor: pointer;
+  background-color: ${({ $isActive }) => ($isActive ? '#333' : 'transparent')};
   &:hover {
     background-color: #333;
   }
+  transition: background-color 0.2s;
 `;
 
 const StyledLink = styled(Link)`
-  color: white;
+  color: #fff;
   text-decoration: none;
   margin-left: 10px;
 `;
 
 const SideBar = ({ children }) => {
-  const [count, setCount] = useState(0);
-  return (
-    <SideBarContext.Provider value={{ count, setCount }}>
-      <StyledSideBar onClick={() => setCount((prev) => prev + 1)}>
-        {children}
-      </StyledSideBar>
-    </SideBarContext.Provider>
-  );
+  return <StyledSideBar>{children}</StyledSideBar>;
 };
 
 const Section = ({ children }) => {
   return <StyledSection>{children}</StyledSection>;
 };
 
-const Item = ({ icon, to, children }) => {
+const Item = ({ icon, to, children, isActive }) => {
   return (
-    <StyledItem>
+    <StyledItem $isActive={isActive}>
       {icon}
       <StyledLink to={to}>{children}</StyledLink>
     </StyledItem>
@@ -78,17 +79,22 @@ const Title = ({ children }) => {
   return <StyledTitle>{children}</StyledTitle>;
 };
 
-const SubItem = ({ image, children }) => {
+const SubItem = ({ to, image, children, isActive }) => {
   return (
-    <StyledSubItem>
+    <StyledSubItem $isActive={isActive}>
       {image && (
         <img
           src={image}
           alt=""
-          style={{ width: '40px', height: '40px', marginRight: '10px' }}
+          style={{
+            width: '40px',
+            height: '40px',
+            borderRadius: '4px',
+            marginRight: '10px',
+          }}
         />
       )}
-      <span>{children}</span>
+      <StyledLink to={to}>{children}</StyledLink>
     </StyledSubItem>
   );
 };

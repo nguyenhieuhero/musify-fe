@@ -1,6 +1,11 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { login } from '../services/apiService';
+import toast from 'react-hot-toast';
+import Form from '../ui/Form';
+import tokenService from '../services/tokenService';
+import { useNavigate } from 'react-router-dom';
+import { useAuthContext } from '../contexts/AuthContext';
 
 const StyledLoginPage = styled.div`
   display: flex;
@@ -11,70 +16,56 @@ const StyledLoginPage = styled.div`
   background-color: #f0f2f5;
 `;
 
-const LoginForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-`;
-
-const Input = styled.input`
-  margin-bottom: 15px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-`;
-
-const Button = styled.button`
-  padding: 10px;
-  font-size: 16px;
-  color: white;
-  background-color: #4caf50;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  &:hover {
-    background-color: #45a049;
-  }
-`;
-
-const Login = () => {
-  const [username, setUsername] = useState('');
+const LogIn = () => {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
+  const { user } = useAuthContext();
+  useEffect(() => {
+    if (user) {
+      navigate('/');
+    }
+  }, [user, navigate]);
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle login logic here
-    console.log('Username:', username);
-    console.log('Password:', password);
+    if (!email || !password) {
+      toast.error('Need both email and password');
+      return;
+    }
+    try {
+      const response = await login({
+        email: email,
+        password: password,
+      });
+      const { accessToken, refreshToken } = response.data;
+      tokenService.setTokens(accessToken, refreshToken);
+      toast.success('Login successful');
+      navigate('/');
+    } catch (error) {
+      toast.error('Login failed');
+    }
   };
 
   return (
     <StyledLoginPage>
-      <LoginForm onSubmit={handleSubmit}>
-        <h2>Login</h2>
-        <Input
+      <Form onSubmit={handleSubmit}>
+        <Form.Title>Login</Form.Title>
+        <Form.Input
           type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
-        <Input
+        <Form.Input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button type="submit" onClick={() => navigate('/')}>
-          Login
-        </Button>
-      </LoginForm>
+        <Form.Button type="submit">Login</Form.Button>
+      </Form>
     </StyledLoginPage>
   );
 };
 
-export default Login;
+export default LogIn;

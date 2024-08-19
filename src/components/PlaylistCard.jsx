@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Card = styled.div`
@@ -13,7 +14,7 @@ const Card = styled.div`
   cursor: pointer;
   transition: transform 0.2s;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 `;
 
@@ -21,26 +22,11 @@ const AlbumImage = styled.div`
   position: relative;
   width: 100%;
   padding-top: 100%; // This makes the div a square
-  background-image: url(${(props) => props.image});
+  background-image: url(${(props) => props.$image});
   background-size: cover;
   background-position: center;
   border-radius: 8px;
   margin-bottom: 16px;
-`;
-
-const PlayButton = styled.div`
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  width: 40px;
-  height: 40px;
-  background-color: #1db954;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
 `;
 
 const TrackInfo = styled.div`
@@ -58,17 +44,17 @@ const TrackArtists = styled.div`
   color: #b3b3b3;
 `;
 
-const PlaylistCard = ({ image, trackName, artists }) => {
+const PlaylistCard = ({ image, cardName, des, to }) => {
   return (
-    <Card>
-      <AlbumImage image={image}>
-        <PlayButton>▶</PlayButton>
-      </AlbumImage>
-      <TrackInfo>
-        <TrackName>{trackName}</TrackName>
-        <TrackArtists>{artists.join(', ')}</TrackArtists>
-      </TrackInfo>
-    </Card>
+    <Link to={to}>
+      <Card>
+        <AlbumImage $image={image}></AlbumImage>
+        <TrackInfo>
+          <TrackName>{cardName}</TrackName>
+          <TrackArtists>{des}</TrackArtists>
+        </TrackInfo>
+      </Card>
+    </Link>
   );
 };
 

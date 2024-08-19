@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 function useBackForward() {
   const [canGoBack, setCanGoBack] = useState(false);
   const [canGoForward, setCanGoForward] = useState(false);
-  console.log(window.history.state);
   useEffect(() => {
     const checkHistory = () => {
       setCanGoBack(window.history.state?.idx > 0);

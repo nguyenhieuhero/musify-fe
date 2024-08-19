@@ -1,9 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  currentPlaylist: '',
-  currentAlbum: '',
-  currentTrack: '0T4AitQuq8IJhWBWuZwkFA',
+  trackInfo: '',
 };
 
 const playerSlice = createSlice({
@@ -11,7 +9,7 @@ const playerSlice = createSlice({
   initialState,
   reducers: {
     playTrack: (state, action) => {
-      state.currentTrack = action.payload;
+      state.trackInfo = action.payload;
     },
   },
 });

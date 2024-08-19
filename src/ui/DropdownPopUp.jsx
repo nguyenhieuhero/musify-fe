@@ -16,7 +16,7 @@ const StyledDropdownPopUp = styled.div`
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(153, 146, 146, 0.1);
   z-index: 1000;
 `;
 
