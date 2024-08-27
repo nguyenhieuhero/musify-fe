@@ -25,7 +25,7 @@ const ModalBody = styled.div`
 `;
 
 const ImagePlaceholder = styled.div`
-  width: 150px;
+  width: 300px;
   height: 150px;
   background-color: #2c2c2c;
   border-radius: 8px;
@@ -41,7 +41,7 @@ const ImagePlaceholder = styled.div`
 const ImagePreview = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
 `;
 

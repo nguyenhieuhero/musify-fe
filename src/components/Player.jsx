@@ -9,6 +9,9 @@ const StyledPlayer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  box-shadow: 1px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px -3px 5px 0px rgba(0, 0, 0, 0.75);
 `;
 
 const StyledSpotifyPlayerContainer = styled.div`

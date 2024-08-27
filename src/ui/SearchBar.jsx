@@ -37,7 +37,6 @@ function SearchBar() {
     }
   }, [query, navigate]);
 
-  console.log(query);
   return (
     <SearchContainer>
       <FontAwesomeIcon icon={faSearch} color="#b3b3b3" />

@@ -23,9 +23,7 @@ export const AuthProvider = ({ children }) => {
       try {
         const userData = await getUserData();
         setUser(userData);
-        console.log('User data fetched in context:', userData);
       } catch (error) {
-        console.error('Failed to fetch user data:', error);
         tokenService.clearTokens();
         setUser(null);
         navigate('/login');

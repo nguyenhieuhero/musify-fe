@@ -29,7 +29,6 @@ api.interceptors.response.use(
       originalRequest._retry = true;
       try {
         const newToken = await tokenService.refreshAccessToken();
-        // Set the new token for the original request
         originalRequest.headers.Authorization = `Bearer ${newToken}`;
         return api(originalRequest);
       } catch (err) {
@@ -78,4 +77,6 @@ export const deleteTrackFromPlaylist = (pid, id) =>
   api.delete(`/Playlist/${pid}/${id}`);
 
 export const getRcmTracks = (pid) => api.get(`/Playlist/rcm/${pid}`);
+export const getSimilarTracks = (id) => api.get(`/Track/rcm/${id}`);
+
 export default api;

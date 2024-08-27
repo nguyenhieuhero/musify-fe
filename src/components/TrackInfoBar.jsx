@@ -3,7 +3,7 @@ import { Scrollable } from '../ui/ScrollBar';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { getTrackInfo } from '../services/apiService';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import OwnedPlaylists from './OwnedPlaylists';
 
@@ -34,11 +34,17 @@ const StyledTrack = styled.div`
   }
 `;
 
+const TrackTitleSection = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 // Track name styling
 const TrackName = styled.h3`
   font-size: 16px;
   color: white;
   margin: 0 0 5px 0;
+  max-width: 60%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -93,6 +99,7 @@ const CardContainer = styled.div`
   &:hover {
     background-color: #333333;
   }
+  margin-bottom: 10px;
 `;
 
 // Artist image styling
@@ -115,9 +122,6 @@ function TrackInfoBar() {
   const { trackInfo } = useSelector((state) => state.player);
   const [track, setTrack] = useState(null);
   const [artist, setArtist] = useState(null);
-  const allPlaylist = useSelector((state) => state.playlist.playlists);
-  const ownedPlaylist = allPlaylist.filter((playlist) => playlist.isOwner);
-  console.log('ownedP', ownedPlaylist);
 
   useEffect(() => {
     const fetchPlaylists = async () => {
@@ -134,7 +138,6 @@ function TrackInfoBar() {
     }
   }, [trackInfo]);
 
-  console.log('track info', track, artist);
   return (
     <StyledSideBar>
       {artist && (
@@ -151,7 +154,10 @@ function TrackInfoBar() {
             toast.success('Track id copied to clipboard');
           }}
         >
-          <TrackName>{track.track_name}</TrackName>
+          <TrackTitleSection>
+            <TrackName>{track.track_name}</TrackName>
+            <Link to={`/track/similar/${track.id}`}>More like this</Link>
+          </TrackTitleSection>
           <TrackInfo>Popularity: {track.popularity}</TrackInfo>
           <TrackInfo>Energy: {track.energy}</TrackInfo>
           <TrackInfo>Tempo: {track.tempo.toFixed(1)} BPM</TrackInfo>

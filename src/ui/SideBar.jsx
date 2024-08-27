@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Scrollable } from './ScrollBar';
 
 const StyledSideBar = styled(Scrollable)`
-  height: 100vh;
+  height: 91vh;
   width: 20vw; /* Adjust width for better layout */
   background-color: #000;
   color: #fff;

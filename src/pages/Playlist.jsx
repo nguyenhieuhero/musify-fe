@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGear } from '@fortawesome/free-solid-svg-icons';
+import { faGear, faRefresh } from '@fortawesome/free-solid-svg-icons';
 import TrackCard from '../components/TrackCard';
 import Header from '../ui/Header';
 import { useParams } from 'react-router-dom';
@@ -7,7 +7,6 @@ import { getPlaylistTracksById, getRcmTracks } from '../services/apiService';
 import { useEffect, useState } from 'react';
 import PlaylistModal from '../components/PlaylistModal';
 import styled from 'styled-components';
-
 const PlaylistContainer = styled.div`
   padding: 20px;
   background-color: #121212;
@@ -19,9 +18,8 @@ const TrackList = styled.div`
   min-height: 50vh;
 `;
 
-const SettingsIcon = styled(FontAwesomeIcon)`
+const Icon = styled(FontAwesomeIcon)`
   cursor: pointer;
-  font-size: 20px;
   color: white;
   transition: color 0.3s ease;
 
@@ -30,21 +28,27 @@ const SettingsIcon = styled(FontAwesomeIcon)`
   }
 `;
 
+const H1 = styled.h1`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
 function Playlist() {
   const { id } = useParams();
   const [tracks, setTracks] = useState(null);
   const [playlistInfo, setPlaylistInfo] = useState(null);
   const [rcmTracks, setRcmTracks] = useState(null);
+  const [seed, setSeed] = useState(1);
+  const reset = () => {
+    setSeed(Math.random());
+  };
 
   useEffect(() => {
     const fetchTracks = async () => {
       try {
         const response = await getPlaylistTracksById(id);
         setTracks(response.data.playlist_tracks);
-        if (response.data.playlist_tracks) {
-          const rcm = await getRcmTracks(id);
-          setRcmTracks(rcm.data.tracks);
-        }
         setPlaylistInfo(response.data);
       } catch (error) {
         console.error('Failed to fetch playlist tracks', error);
@@ -52,10 +56,22 @@ function Playlist() {
     };
     fetchTracks();
   }, [id]);
-  console.log(rcmTracks);
+
+  useEffect(() => {
+    const fetchRcmTracks = async () => {
+      try {
+        const response = await getRcmTracks(id);
+        setRcmTracks(response.data.tracks);
+      } catch (error) {
+        console.error('Failed to fetch playlist tracks', error);
+      }
+    };
+    fetchRcmTracks();
+  }, [id, seed]);
+
   return (
     <PlaylistContainer>
-      {playlistInfo && (
+      {playlistInfo ? (
         <>
           <Header
             title="Playlist"
@@ -65,7 +81,7 @@ function Playlist() {
             settingIcon={
               playlistInfo.isOwner && (
                 <PlaylistModal
-                  trigger={<SettingsIcon icon={faGear} />}
+                  trigger={<Icon icon={faGear} size="2x" />}
                   name={playlistInfo.playlist_name}
                   desc={playlistInfo.playlist_description}
                   img={playlistInfo.playlist_image}
@@ -77,6 +93,8 @@ function Playlist() {
             }
           />
         </>
+      ) : (
+        <h1>Add some tracks to your playlist</h1>
       )}
       <TrackList>
         {tracks &&
@@ -90,10 +108,11 @@ function Playlist() {
             />
           ))}
       </TrackList>
-      {rcmTracks ? (
-        <h1>Maybe you will like</h1>
-      ) : (
-        <h1>Add some tracks to your playlist</h1>
+      {rcmTracks && (
+        <H1>
+          Maybe you will like{' '}
+          <Icon icon={faRefresh} size="xs" onClick={reset} />
+        </H1>
       )}
       <TrackList>
         {rcmTracks &&

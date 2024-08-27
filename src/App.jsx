@@ -13,6 +13,7 @@ import Search from './pages/Search';
 import Artist from './pages/Artist';
 import { AppContextProvider } from './contexts/AppContext';
 import Album from './pages/Album';
+import SimilarTracks from './pages/SimilarTracks';
 // import { Toaster } from 'react-hot-toast';
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/search" element={<Search />} />
               <Route path="/artist/:id" element={<Artist />} />
               <Route path="/album/:id" element={<Album />} />
+              <Route path="/track/similar/:id" element={<SimilarTracks />} />
             </Route>
             <Route path="/login" element={<LogIn />} />
             <Route path="/signup" element={<SignUp />} />

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { getMyArtists, getPopularArtists } from '../services/apiService';
 import PlaylistCard from '../components/PlaylistCard';
+import { Scrollable } from '../ui/ScrollBar';
 
 // Main layout container
 const HomePageContainer = styled.div`
@@ -9,11 +10,11 @@ const HomePageContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #121212;
+  min-height: 100vh;
   color: white;
 `;
 
 const HeroSection = styled.div`
-  background-image: url('https://example.com/hero-banner.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -35,7 +36,7 @@ const SectionTitle = styled.h2`
   padding-left: 20px;
 `;
 
-const SectionContainer = styled.div`
+const SectionContainer = styled(Scrollable)`
   display: flex;
   width: 97%;
   align-self: center;
@@ -86,7 +87,7 @@ function Home() {
         </>
       )}
 
-      <SectionTitle>Most Popular Artists</SectionTitle>
+      {popularArtists && <SectionTitle>Most Popular Artists</SectionTitle>}
       {popularArtists && (
         <SectionContainer>
           {popularArtists.map((artist) => (

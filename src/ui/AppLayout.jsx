@@ -19,14 +19,12 @@ const Container = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: gray;
   /* overflow-y: scroll; */
 `;
 
 const RowLayout = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: gray;
   height: 91vh;
   width: 100vw;
 `;
@@ -35,7 +33,8 @@ const Content = styled(Scrollable)`
   display: flex;
   flex-direction: column;
   width: 60vw;
-  background-color: gray;
+  min-height: 80vh;
+  background-color: #121212;
 `;
 
 function AppLayout() {

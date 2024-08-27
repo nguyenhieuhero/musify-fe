@@ -79,7 +79,7 @@ function Search() {
     if (query) {
       fetchResults();
     } else {
-      setResults([]); // Clear results if query is empty
+      setResults([]);
     }
 
     return () => {
