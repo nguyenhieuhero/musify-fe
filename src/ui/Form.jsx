@@ -6,7 +6,6 @@ const Form = styled.form`
   flex-direction: column;
   padding: 20px;
   background-color: white;
-  border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 `;
 
@@ -22,18 +21,18 @@ const Button = styled.button`
   padding: 10px;
   font-size: 16px;
   color: white;
-  background-color: #4caf50;
+  background-color: #143e87;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   &:hover {
-    background-color: #45a049;
+    background-color: #144394;
   }
 `;
 
 const Title = styled.h2`
   margin-bottom: 20px;
-  color: blue;
+  color: #143e87;
 `;
 
 Form.Input = Input;

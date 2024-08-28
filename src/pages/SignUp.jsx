@@ -12,7 +12,7 @@ const StyledSignUpPage = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #f0f2f5;
+  background-color: #121212;
 `;
 
 const SignUp = () => {

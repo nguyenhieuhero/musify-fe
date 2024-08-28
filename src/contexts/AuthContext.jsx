@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import tokenService from '../services/tokenService';
 import { getUserData } from '../services/apiService';
 
@@ -10,12 +10,14 @@ export const useAuthContext = () => useContext(AuthContext);
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const fetchUserData = async () => {
       const accessToken = tokenService.getAccessToken();
       if (!accessToken) {
         setUser(null);
+        if (location.pathname != '/singup') return;
         navigate('/login');
         return;
       }
@@ -26,12 +28,13 @@ export const AuthProvider = ({ children }) => {
       } catch (error) {
         tokenService.clearTokens();
         setUser(null);
+        if (location.pathname != '/singup') return;
         navigate('/login');
       }
     };
 
     fetchUserData();
-  }, [navigate]);
+  }, [location.pathname, navigate]);
 
   return (
     <AuthContext.Provider value={{ user }}>{children}</AuthContext.Provider>
